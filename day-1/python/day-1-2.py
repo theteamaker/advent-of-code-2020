@@ -12,6 +12,8 @@ for num1 in numbers:
             continue
 
         if (num3 := desired_sum - (num1 + num2)) in numbers:
-            print(f"The three numbers which multiply to get {desired_sum} are {num1}, {num2} and {num3}.")
+            print(
+                f"The three numbers which multiply to get {desired_sum} are {num1}, {num2} and {num3}."
+            )
             print(f"The product of these three numbers is {num1 * num2 * num3}.")
             exit()
