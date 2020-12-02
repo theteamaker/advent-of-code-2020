@@ -12,8 +12,8 @@ numbers.each do |num1|
         if numbers.index(num1) == numbers.index(num2)
             next
         elsif numbers.includes?(num3)
-            puts "The three numbers which add to get " + desired_sum.to_s + " are " + num1.to_s + ", " + num2.to_s + ", and " + num3.to_s + "."
-            puts "The product of these three numbers is " + (num1 * num2 * num3).to_s + "."
+            puts "The three numbers which add to get %d are %d, %d, and %d." % [desired_sum, num1, num2, num3]
+            puts "The product of these three numbers is %d." % [num1 * num2 * num3]
             complete = true
             break
         end
