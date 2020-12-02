@@ -7,7 +7,6 @@ for i in sys.stdin:
     numbers.append(int(i))
 
 for num1 in numbers:
-
     for num2 in numbers:
         if numbers.index(num2) is numbers.index(num1):
             continue
