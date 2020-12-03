@@ -12,7 +12,6 @@ def encounters(lines, slope):
     position = (0, 0)
     multiplier = 1
     trees = 0
-
     count = abs(slope[1]) - 1
 
     for i in lines:
@@ -30,9 +29,7 @@ def encounters(lines, slope):
             trees += 1
 
         position = (position[0] + slope[0], position[1] + slope[1])
-
         count = 0
-
     return trees
 
 
