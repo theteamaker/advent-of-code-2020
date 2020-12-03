@@ -1,6 +1,6 @@
 import sys
 
-slope = (1, -3)
+slope = (1, -2)
 position = (0, 0)
 multiplier = 1
 trees = 0
