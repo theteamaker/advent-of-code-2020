@@ -33,7 +33,6 @@ for i in sys.stdin:
 
 def lu(parent, value):
     sum = 0
-    m = value
     try:
         table = rules[parent]
     except:
