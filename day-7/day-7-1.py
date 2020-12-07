@@ -21,8 +21,10 @@ for i in sys.stdin:
             if len(f) != len(x):
                 z = f.strip(" ")
                 to_append.append(z)
-    
+
     fruit[bag] = to_append
+
+# me avoiding recursion at all costs
 
 bases = []
 

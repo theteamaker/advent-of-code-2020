@@ -23,23 +23,27 @@ for i in sys.stdin:
             f = x.strip(str(y))
             if len(f) != len(x):
                 name = f.strip(" ")
-        
+
         q = {name: val}
         to_append.append(q)
     rules[color] = to_append
 
+# me giving in
+
+
 def lu(parent, value):
     sum = 0
-    m = value 
+    m = value
     try:
         table = rules[parent]
     except:
         return value
-    
+
     for child in table:
         for k, v in child.items():
             sum += lu(k, int(v)) * value
-    
+
     return sum + value
 
-print(lu(("shiny gold"), 1) - 1) # -1 because don't include the outside bag
+
+print(lu(("shiny gold"), 1) - 1)  # -1 because don't include the outside bag
